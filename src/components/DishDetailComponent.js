@@ -31,14 +31,16 @@ class DishDetail extends Component {
                 return (<div>
                     <li className="list-unstyled">{user_comment.comment}</li>
                     <br></br>
-                    <li className="list-unstyled"> -- {user_comment.author},{user_comment.date}</li>
+                    <li className="list-unstyled"> :: <i>{user_comment.author}</i>, Date: {user_comment.date.slice(0,10)}</li>
                     <br></br>
                 </div>
                 );
             }));
         }
         else {
-            return (<div></div>);
+            return (
+            <div></div>
+            );
         }
 
 
@@ -59,8 +61,6 @@ class DishDetail extends Component {
                 </div>
             )
         }
-
-
         else
             return (
                 <div></div>
