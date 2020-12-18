@@ -15,7 +15,7 @@ class DishDetail extends Component {
             <div className="col-12 col-md-5 m-1">
                 <Card>
                     <CardImg top src={this.props.dish.image} alt={this.props.dish.name} />
-                    <CardBody>
+                    <CardBody>                      
                         <CardTitle>{this.props.dish.name}</CardTitle>
                         <CardText>{this.props.dish.description}</CardText>
                     </CardBody>
@@ -49,7 +49,7 @@ class DishDetail extends Component {
     render() {
         if (this.props.dish != null) {
             return (
-                <div className="container">
+                <div class="container">
                     <div className="row">
                         {this.renderDish()}
                         <div className="col-12 col-md-5 m-1">
